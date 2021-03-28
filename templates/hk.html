@@ -1,4 +1,4 @@
-<a href="http://localhost:8000/"><h1>COVID-19 Case Tracker</h1></a>
+<a href="/"><h1>COVID-19 Case Tracker</h1></a>
 
 
 {% block content %}
@@ -23,7 +23,7 @@
 <h2>Locations: </h2>
 {% for locations in Locations %} 
 <ul>
-    <li><a href="http://localhost:8000/{{locations.pk}}/">{{locations.country}}</a></li>
+    <li><a href="/{{locations.pk}}/">{{locations.country}}</a></li>
 </ul>
 
 {% endfor %}
